@@ -2,5 +2,9 @@
 	"name" : "Go",
 	"dockerComposeFile" : "docker-compose.yml",
 	"service": "app",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"postCreateCommand": "air",
+	"features": {
+		  "ghcr.io/devcontainers/features/github-cli:1": {}
+	}
 }
